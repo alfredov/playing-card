@@ -12,6 +12,9 @@
 		385277B3216AF4C500A2A139 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385277B1216AF4C500A2A139 /* Main.storyboard */; };
 		385277B5216AF4C600A2A139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385277B4216AF4C600A2A139 /* Assets.xcassets */; };
 		385277B8216AF4C600A2A139 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385277B6216AF4C600A2A139 /* LaunchScreen.storyboard */; };
+		385277C1216AF5B000A2A139 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385277C0216AF5B000A2A139 /* PlayingCard.swift */; };
+		385277C3216B004E00A2A139 /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385277C2216B004E00A2A139 /* PlayingCardDeck.swift */; };
+		385668A1216B9A3000F6275E /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385668A0216B9A3000F6275E /* PlayingCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		385277B4216AF4C600A2A139 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		385277B7216AF4C600A2A139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		385277B9216AF4C600A2A139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		385277C0216AF5B000A2A139 /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
+		385277C2216B004E00A2A139 /* PlayingCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
+		385668A0216B9A3000F6275E /* PlayingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,25 @@
 		385277AC216AF4C500A2A139 /* PlayingCard */ = {
 			isa = PBXGroup;
 			children = (
-				385277AD216AF4C500A2A139 /* AppDelegate.swift */,
+				385668A0216B9A3000F6275E /* PlayingCardView.swift */,
 				385277AF216AF4C500A2A139 /* ViewController.swift */,
+				385277C0216AF5B000A2A139 /* PlayingCard.swift */,
+				385277C2216B004E00A2A139 /* PlayingCardDeck.swift */,
 				385277B1216AF4C500A2A139 /* Main.storyboard */,
 				385277B4216AF4C600A2A139 /* Assets.xcassets */,
-				385277B6216AF4C600A2A139 /* LaunchScreen.storyboard */,
+				385277BF216AF51800A2A139 /* Supporting files */,
 				385277B9216AF4C600A2A139 /* Info.plist */,
 			);
 			path = PlayingCard;
+			sourceTree = "<group>";
+		};
+		385277BF216AF51800A2A139 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				385277AD216AF4C500A2A139 /* AppDelegate.swift */,
+				385277B6216AF4C600A2A139 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				385277B0216AF4C500A2A139 /* ViewController.swift in Sources */,
+				385277C3216B004E00A2A139 /* PlayingCardDeck.swift in Sources */,
+				385277C1216AF5B000A2A139 /* PlayingCard.swift in Sources */,
+				385668A1216B9A3000F6275E /* PlayingCardView.swift in Sources */,
 				385277AE216AF4C500A2A139 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E99QS6RV6;
 				INFOPLIST_FILE = PlayingCard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E99QS6RV6;
 				INFOPLIST_FILE = PlayingCard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
